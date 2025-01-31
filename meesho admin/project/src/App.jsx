@@ -60,7 +60,7 @@ function App() {
                   </PrivateRoute>
                 }
               />
-              <Route path="/" element={<Navigate to="/products" />} />
+              <Route path="/" element={<Navigate to="/login" />} />
             </Routes>
           </main>
         </div>

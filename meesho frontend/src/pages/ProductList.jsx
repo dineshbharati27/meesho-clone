@@ -38,7 +38,7 @@ const ProductList = () => {
       try {
         const response = await axios.get('https://api.escuelajs.co/api/v1/categories');
 
-        setCategories(response.data.slice(0,8));
+        setCategories(response.data);
       } catch (err) {
         console.error('Failed to fetch categories', err);
       }
