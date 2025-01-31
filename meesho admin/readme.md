@@ -25,80 +25,16 @@ This project is an Admin Panel for the Meesho e-commerce platform. The Admin Pan
 
 ## API Endpoints Used
 
-### Products API
-- **Get All Products**  
-  `GET https://api.escuelajs.co/api/v1/products`
-  
-- **Create a Product**  
-  `POST https://api.escuelajs.co/api/v1/products/`
-  ```json
-  {
-    "title": "New Product",
-    "price": 10,
-    "description": "A description",
-    "categoryId": 1,
-    "images": ["https://placeimg.com/640/480/any"]
-  }
 
-- **Update a Product**
-  `PUT https://api.escuelajs.co/api/v1/products/{id}`
+## Setup
+### Prerequisites
+- Node.js >= 14.x
+- npm or yarn for package management
+- Installation
+- Clone the repository:
 
-```json
-    {
-    "title": "Updated Title",
-    "price": 100
-    }
-
-- **Delete a Product**
-    `DELETE https://api.escuelajs.co/api/v1/products/{id}`
-
-Categories API
-Get All Categories
-GET https://api.escuelajs.co/api/v1/categories
-
-Create a Category
-POST https://api.escuelajs.co/api/v1/categories/
-
-json
-Copy
-Edit
-{
-  "name": "New Category",
-  "image": "https://placeimg.com/640/480/any"
-}
-Update a Category
-PUT https://api.escuelajs.co/api/v1/categories/{id}
-
-json
-Copy
-Edit
-{
-  "name": "Updated Category Name"
-}
-Delete a Category
-DELETE https://api.escuelajs.co/api/v1/categories/{id}
-
-Users API
-Get All Users
-GET https://api.escuelajs.co/api/v1/users
-File Upload API
-Upload a File
-POST https://api.escuelajs.co/api/v1/files/upload
-Content-Type: multipart/form-data
-json
-{
-  "file": "<Binary File>"
-}
-Setup
-Prerequisites
-Node.js >= 14.x
-npm or yarn for package management
-Installation
-Clone the repository:
-
-bash
+## bash
 git clone https://github.com/yourusername/meesho-admin-panel.git
-Navigate to the project folder:
 
 bash
 cd meesho-admin-panel
